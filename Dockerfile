@@ -20,10 +20,10 @@ RUN make tests/test_blas -j $(nproc) && \
 
 RUN make py
 
-RUN cd gpu && \
-    make -j $(nproc) && \
-    make test/demo_ivfpq_indexing_gpu && \
-    make py
+# RUN cd gpu && \
+#     make -j $(nproc) && \
+#     make test/demo_ivfpq_indexing_gpu && \
+#     make py
 
 # RUN ./tests/test_blas && \
 #     tests/demo_ivfpq_indexing
